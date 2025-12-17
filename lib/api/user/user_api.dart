@@ -80,8 +80,8 @@ mixin UserApi {
   /// [type] 类型（可选，默认为 3）
   Future<QrcodeKeyEntity?> qrCodeKey({int type = 1}) async {
     final data = {'type': type, 'timerstamp': '${DateTime.now()}'};
-    return await BujuanMusicManager()
-        .post<QrcodeKeyEntity>(url: Api.qrCodeKey, options: createOption(encryptType: EncryptType.weApi), data: data);
+    return await BujuanMusicManager().post<QrcodeKeyEntity>(
+        url: Api.qrCodeKey, options: createOption(encryptType: EncryptType.weApi), data: data);
   }
 
   /// 二维码
@@ -99,8 +99,8 @@ mixin UserApi {
     int type = 1,
   }) async {
     final data = {'key': key, 'type': type, 'timerstamp': '${DateTime.now()}'};
-    return await BujuanMusicManager()
-        .post<StringEntity>(url: Api.checkQrCode, options: createOption(encryptType: EncryptType.weApi), data: data);
+    return await BujuanMusicManager().post<StringEntity>(
+        url: Api.checkQrCode, options: createOption(encryptType: EncryptType.weApi), data: data);
   }
 
   ///用户信息（需登录）
@@ -139,5 +139,10 @@ mixin UserApi {
   Future<BoolEntity?> logout() async {
     return await BujuanMusicManager()
         .post<BoolEntity>(url: Api.logout, options: createOption(), data: {});
+  }
+
+  Future<dynamic> homepageDragonBall() async {
+    return await BujuanMusicManager()
+        .post(url: '/api/homepage/dragon/ball/static', options: createOption(), data: {});
   }
 }
