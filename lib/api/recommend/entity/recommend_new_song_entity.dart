@@ -4,15 +4,15 @@ import 'dart:convert';
 export 'package:bujuan_music_api/generated/json/recommend_song_entity.g.dart';
 
 @JsonSerializable()
-class RecommendSongEntity {
+class RecommendNewSongEntity {
 	int? code = 0;
-	RecommendSongData? data;
+	RecommendNewSongData? data;
 
-	RecommendSongEntity();
+	RecommendNewSongEntity();
 
-	factory RecommendSongEntity.fromJson(Map<String, dynamic> json) => $RecommendSongEntityFromJson(json);
+	factory RecommendNewSongEntity.fromJson(Map<String, dynamic> json) => $RecommendNewSongEntityFromJson(json);
 
-	Map<String, dynamic> toJson() => $RecommendSongEntityToJson(this);
+	Map<String, dynamic> toJson() => $RecommendNewSongEntityToJson(this);
 
 	@override
 	String toString() {
@@ -21,18 +21,18 @@ class RecommendSongEntity {
 }
 
 @JsonSerializable()
-class RecommendSongData {
-	List<RecommendSongDataDailySongs>? dailySongs = [];
+class RecommendNewSongData {
+	List<RecommendNewSongDataDailySongs>? dailySongs = [];
 	List<dynamic>? orderSongs = [];
-	List<RecommendSongDataRecommendReasons>? recommendReasons = [];
+	List<RecommendNewSongDataRecommendReasons>? recommendReasons = [];
 	dynamic mvResourceInfos;
 	bool? demote = false;
 
-	RecommendSongData();
+	RecommendNewSongData();
 
-	factory RecommendSongData.fromJson(Map<String, dynamic> json) => $RecommendSongDataFromJson(json);
+	factory RecommendNewSongData.fromJson(Map<String, dynamic> json) => $RecommendNewSongDataFromJson(json);
 
-	Map<String, dynamic> toJson() => $RecommendSongDataToJson(this);
+	Map<String, dynamic> toJson() => $RecommendNewSongDataToJson(this);
 
 	@override
 	String toString() {
@@ -41,12 +41,12 @@ class RecommendSongData {
 }
 
 @JsonSerializable()
-class RecommendSongDataDailySongs {
+class RecommendNewSongDataDailySongs {
 	String? name = '';
 	int? id = 0;
 	int? pst = 0;
 	int? t = 0;
-	List<RecommendSongDataDailySongsAr>? ar = [];
+	List<RecommendNewSongDataDailySongsAr>? ar = [];
 	List<dynamic>? alia = [];
 	double? pop;
 	int? st = 0;
@@ -55,13 +55,13 @@ class RecommendSongDataDailySongs {
 	int? v = 0;
 	dynamic crbt;
 	String? cf = '';
-	RecommendSongDataDailySongsAl? al;
+	RecommendNewSongDataDailySongsAl? al;
 	int? dt = 0;
-	RecommendSongDataDailySongsH? h;
-	RecommendSongDataDailySongsM? m;
-	RecommendSongDataDailySongsL? l;
-	RecommendSongDataDailySongsSq? sq;
-	RecommendSongDataDailySongsHr? hr;
+	RecommendNewSongDataDailySongsH? h;
+	RecommendNewSongDataDailySongsM? m;
+	RecommendNewSongDataDailySongsL? l;
+	RecommendNewSongDataDailySongsSq? sq;
+	RecommendNewSongDataDailySongsHr? hr;
 	dynamic a;
 	String? cd = '';
 	int? no = 0;
@@ -90,15 +90,15 @@ class RecommendSongDataDailySongs {
 	int? publishTime = 0;
 	String? reason = '';
 	String? recommendReason = '';
-	RecommendSongDataDailySongsPrivilege? privilege;
+	RecommendNewSongDataDailySongsPrivilege? privilege;
 	String? alg = '';
 	List<String>? tns = [];
 
-	RecommendSongDataDailySongs();
+	RecommendNewSongDataDailySongs();
 
-	factory RecommendSongDataDailySongs.fromJson(Map<String, dynamic> json) => $RecommendSongDataDailySongsFromJson(json);
+	factory RecommendNewSongDataDailySongs.fromJson(Map<String, dynamic> json) => $RecommendNewSongDataDailySongsFromJson(json);
 
-	Map<String, dynamic> toJson() => $RecommendSongDataDailySongsToJson(this);
+	Map<String, dynamic> toJson() => $RecommendNewSongDataDailySongsToJson(this);
 
 	@override
 	String toString() {
@@ -107,17 +107,17 @@ class RecommendSongDataDailySongs {
 }
 
 @JsonSerializable()
-class RecommendSongDataDailySongsAr {
+class RecommendNewSongDataDailySongsAr {
 	int? id = 0;
 	String? name = '';
 	List<dynamic>? tns = [];
 	List<dynamic>? alias = [];
 
-	RecommendSongDataDailySongsAr();
+	RecommendNewSongDataDailySongsAr();
 
-	factory RecommendSongDataDailySongsAr.fromJson(Map<String, dynamic> json) => $RecommendSongDataDailySongsArFromJson(json);
+	factory RecommendNewSongDataDailySongsAr.fromJson(Map<String, dynamic> json) => $RecommendNewSongDataDailySongsArFromJson(json);
 
-	Map<String, dynamic> toJson() => $RecommendSongDataDailySongsArToJson(this);
+	Map<String, dynamic> toJson() => $RecommendNewSongDataDailySongsArToJson(this);
 
 	@override
 	String toString() {
@@ -126,7 +126,7 @@ class RecommendSongDataDailySongsAr {
 }
 
 @JsonSerializable()
-class RecommendSongDataDailySongsAl {
+class RecommendNewSongDataDailySongsAl {
 	int? id = 0;
 	String? name = '';
 	String? picUrl = '';
@@ -135,11 +135,11 @@ class RecommendSongDataDailySongsAl {
 	String? picStr = '';
 	int? pic = 0;
 
-	RecommendSongDataDailySongsAl();
+	RecommendNewSongDataDailySongsAl();
 
-	factory RecommendSongDataDailySongsAl.fromJson(Map<String, dynamic> json) => $RecommendSongDataDailySongsAlFromJson(json);
+	factory RecommendNewSongDataDailySongsAl.fromJson(Map<String, dynamic> json) => $RecommendNewSongDataDailySongsAlFromJson(json);
 
-	Map<String, dynamic> toJson() => $RecommendSongDataDailySongsAlToJson(this);
+	Map<String, dynamic> toJson() => $RecommendNewSongDataDailySongsAlToJson(this);
 
 	@override
 	String toString() {
@@ -148,18 +148,18 @@ class RecommendSongDataDailySongsAl {
 }
 
 @JsonSerializable()
-class RecommendSongDataDailySongsH {
+class RecommendNewSongDataDailySongsH {
 	int? br = 0;
 	int? fid = 0;
 	int? size = 0;
 	double? vd;
 	int? sr = 0;
 
-	RecommendSongDataDailySongsH();
+	RecommendNewSongDataDailySongsH();
 
-	factory RecommendSongDataDailySongsH.fromJson(Map<String, dynamic> json) => $RecommendSongDataDailySongsHFromJson(json);
+	factory RecommendNewSongDataDailySongsH.fromJson(Map<String, dynamic> json) => $RecommendNewSongDataDailySongsHFromJson(json);
 
-	Map<String, dynamic> toJson() => $RecommendSongDataDailySongsHToJson(this);
+	Map<String, dynamic> toJson() => $RecommendNewSongDataDailySongsHToJson(this);
 
 	@override
 	String toString() {
@@ -168,18 +168,18 @@ class RecommendSongDataDailySongsH {
 }
 
 @JsonSerializable()
-class RecommendSongDataDailySongsM {
+class RecommendNewSongDataDailySongsM {
 	int? br = 0;
 	int? fid = 0;
 	int? size = 0;
 	double? vd;
 	int? sr = 0;
 
-	RecommendSongDataDailySongsM();
+	RecommendNewSongDataDailySongsM();
 
-	factory RecommendSongDataDailySongsM.fromJson(Map<String, dynamic> json) => $RecommendSongDataDailySongsMFromJson(json);
+	factory RecommendNewSongDataDailySongsM.fromJson(Map<String, dynamic> json) => $RecommendNewSongDataDailySongsMFromJson(json);
 
-	Map<String, dynamic> toJson() => $RecommendSongDataDailySongsMToJson(this);
+	Map<String, dynamic> toJson() => $RecommendNewSongDataDailySongsMToJson(this);
 
 	@override
 	String toString() {
@@ -188,18 +188,18 @@ class RecommendSongDataDailySongsM {
 }
 
 @JsonSerializable()
-class RecommendSongDataDailySongsL {
+class RecommendNewSongDataDailySongsL {
 	int? br = 0;
 	int? fid = 0;
 	int? size = 0;
 	double? vd;
 	int? sr = 0;
 
-	RecommendSongDataDailySongsL();
+	RecommendNewSongDataDailySongsL();
 
-	factory RecommendSongDataDailySongsL.fromJson(Map<String, dynamic> json) => $RecommendSongDataDailySongsLFromJson(json);
+	factory RecommendNewSongDataDailySongsL.fromJson(Map<String, dynamic> json) => $RecommendNewSongDataDailySongsLFromJson(json);
 
-	Map<String, dynamic> toJson() => $RecommendSongDataDailySongsLToJson(this);
+	Map<String, dynamic> toJson() => $RecommendNewSongDataDailySongsLToJson(this);
 
 	@override
 	String toString() {
@@ -208,18 +208,18 @@ class RecommendSongDataDailySongsL {
 }
 
 @JsonSerializable()
-class RecommendSongDataDailySongsSq {
+class RecommendNewSongDataDailySongsSq {
 	int? br = 0;
 	int? fid = 0;
 	int? size = 0;
 	double? vd;
 	int? sr = 0;
 
-	RecommendSongDataDailySongsSq();
+	RecommendNewSongDataDailySongsSq();
 
-	factory RecommendSongDataDailySongsSq.fromJson(Map<String, dynamic> json) => $RecommendSongDataDailySongsSqFromJson(json);
+	factory RecommendNewSongDataDailySongsSq.fromJson(Map<String, dynamic> json) => $RecommendNewSongDataDailySongsSqFromJson(json);
 
-	Map<String, dynamic> toJson() => $RecommendSongDataDailySongsSqToJson(this);
+	Map<String, dynamic> toJson() => $RecommendNewSongDataDailySongsSqToJson(this);
 
 	@override
 	String toString() {
@@ -228,18 +228,18 @@ class RecommendSongDataDailySongsSq {
 }
 
 @JsonSerializable()
-class RecommendSongDataDailySongsHr {
+class RecommendNewSongDataDailySongsHr {
 	int? br = 0;
 	int? fid = 0;
 	int? size = 0;
 	double? vd;
 	int? sr = 0;
 
-	RecommendSongDataDailySongsHr();
+	RecommendNewSongDataDailySongsHr();
 
-	factory RecommendSongDataDailySongsHr.fromJson(Map<String, dynamic> json) => $RecommendSongDataDailySongsHrFromJson(json);
+	factory RecommendNewSongDataDailySongsHr.fromJson(Map<String, dynamic> json) => $RecommendNewSongDataDailySongsHrFromJson(json);
 
-	Map<String, dynamic> toJson() => $RecommendSongDataDailySongsHrToJson(this);
+	Map<String, dynamic> toJson() => $RecommendNewSongDataDailySongsHrToJson(this);
 
 	@override
 	String toString() {
@@ -248,7 +248,7 @@ class RecommendSongDataDailySongsHr {
 }
 
 @JsonSerializable()
-class RecommendSongDataDailySongsPrivilege {
+class RecommendNewSongDataDailySongsPrivilege {
 	int? id = 0;
 	int? fee = 0;
 	int? payed = 0;
@@ -276,17 +276,17 @@ class RecommendSongDataDailySongsPrivilege {
 	String? dlLevel = '';
 	String? flLevel = '';
 	dynamic rscl;
-	RecommendSongDataDailySongsPrivilegeFreeTrialPrivilege? freeTrialPrivilege;
+	RecommendNewSongDataDailySongsPrivilegeFreeTrialPrivilege? freeTrialPrivilege;
 	int? rightSource = 0;
-	List<RecommendSongDataDailySongsPrivilegeChargeInfoList>? chargeInfoList = [];
+	List<RecommendNewSongDataDailySongsPrivilegeChargeInfoList>? chargeInfoList = [];
 	int? code = 0;
 	dynamic message;
 
-	RecommendSongDataDailySongsPrivilege();
+	RecommendNewSongDataDailySongsPrivilege();
 
-	factory RecommendSongDataDailySongsPrivilege.fromJson(Map<String, dynamic> json) => $RecommendSongDataDailySongsPrivilegeFromJson(json);
+	factory RecommendNewSongDataDailySongsPrivilege.fromJson(Map<String, dynamic> json) => $RecommendNewSongDataDailySongsPrivilegeFromJson(json);
 
-	Map<String, dynamic> toJson() => $RecommendSongDataDailySongsPrivilegeToJson(this);
+	Map<String, dynamic> toJson() => $RecommendNewSongDataDailySongsPrivilegeToJson(this);
 
 	@override
 	String toString() {
@@ -295,7 +295,7 @@ class RecommendSongDataDailySongsPrivilege {
 }
 
 @JsonSerializable()
-class RecommendSongDataDailySongsPrivilegeFreeTrialPrivilege {
+class RecommendNewSongDataDailySongsPrivilegeFreeTrialPrivilege {
 	bool? resConsumable = false;
 	bool? userConsumable = false;
 	dynamic listenType;
@@ -303,11 +303,11 @@ class RecommendSongDataDailySongsPrivilegeFreeTrialPrivilege {
 	dynamic playReason;
 	dynamic freeLimitTagType;
 
-	RecommendSongDataDailySongsPrivilegeFreeTrialPrivilege();
+	RecommendNewSongDataDailySongsPrivilegeFreeTrialPrivilege();
 
-	factory RecommendSongDataDailySongsPrivilegeFreeTrialPrivilege.fromJson(Map<String, dynamic> json) => $RecommendSongDataDailySongsPrivilegeFreeTrialPrivilegeFromJson(json);
+	factory RecommendNewSongDataDailySongsPrivilegeFreeTrialPrivilege.fromJson(Map<String, dynamic> json) => $RecommendNewSongDataDailySongsPrivilegeFreeTrialPrivilegeFromJson(json);
 
-	Map<String, dynamic> toJson() => $RecommendSongDataDailySongsPrivilegeFreeTrialPrivilegeToJson(this);
+	Map<String, dynamic> toJson() => $RecommendNewSongDataDailySongsPrivilegeFreeTrialPrivilegeToJson(this);
 
 	@override
 	String toString() {
@@ -316,17 +316,17 @@ class RecommendSongDataDailySongsPrivilegeFreeTrialPrivilege {
 }
 
 @JsonSerializable()
-class RecommendSongDataDailySongsPrivilegeChargeInfoList {
+class RecommendNewSongDataDailySongsPrivilegeChargeInfoList {
 	int? rate = 0;
 	dynamic chargeUrl;
 	dynamic chargeMessage;
 	int? chargeType = 0;
 
-	RecommendSongDataDailySongsPrivilegeChargeInfoList();
+	RecommendNewSongDataDailySongsPrivilegeChargeInfoList();
 
-	factory RecommendSongDataDailySongsPrivilegeChargeInfoList.fromJson(Map<String, dynamic> json) => $RecommendSongDataDailySongsPrivilegeChargeInfoListFromJson(json);
+	factory RecommendNewSongDataDailySongsPrivilegeChargeInfoList.fromJson(Map<String, dynamic> json) => $RecommendNewSongDataDailySongsPrivilegeChargeInfoListFromJson(json);
 
-	Map<String, dynamic> toJson() => $RecommendSongDataDailySongsPrivilegeChargeInfoListToJson(this);
+	Map<String, dynamic> toJson() => $RecommendNewSongDataDailySongsPrivilegeChargeInfoListToJson(this);
 
 	@override
 	String toString() {
@@ -335,17 +335,17 @@ class RecommendSongDataDailySongsPrivilegeChargeInfoList {
 }
 
 @JsonSerializable()
-class RecommendSongDataRecommendReasons {
+class RecommendNewSongDataRecommendReasons {
 	int? songId = 0;
 	String? reason = '';
 	String? reasonId = '';
 	dynamic targetUrl;
 
-	RecommendSongDataRecommendReasons();
+	RecommendNewSongDataRecommendReasons();
 
-	factory RecommendSongDataRecommendReasons.fromJson(Map<String, dynamic> json) => $RecommendSongDataRecommendReasonsFromJson(json);
+	factory RecommendNewSongDataRecommendReasons.fromJson(Map<String, dynamic> json) => $RecommendNewSongDataRecommendReasonsFromJson(json);
 
-	Map<String, dynamic> toJson() => $RecommendSongDataRecommendReasonsToJson(this);
+	Map<String, dynamic> toJson() => $RecommendNewSongDataRecommendReasonsToJson(this);
 
 	@override
 	String toString() {
