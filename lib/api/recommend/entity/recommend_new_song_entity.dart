@@ -22,6 +22,10 @@ class RecommendNewSongData {
 
 @JsonSerializable()
 class RecommendNewSongDataDailySongs {
+  List<RecommendNewSongDataDailySongsAr>? ar;
+  RecommendNewSongDataDailySongsAl? al;
+  int? dt;
+  int? mv;
   String? name;
   int? id;
   int? dt;
@@ -34,6 +38,10 @@ class RecommendNewSongDataDailySongs {
 
 @JsonSerializable()
 class RecommendNewSongDataDailySongsAr {
+  List<RecommendNewSongDataDailySongsAr>? ar;
+  RecommendNewSongDataDailySongsAl? al;
+  int? dt;
+  int? mv;
   int? id;
   String? name;
   List<dynamic>? tns;
@@ -46,6 +54,10 @@ class RecommendNewSongDataDailySongsAr {
 
 @JsonSerializable()
 class RecommendNewSongDataDailySongsAl {
+  List<RecommendNewSongDataDailySongsAr>? ar;
+  RecommendNewSongDataDailySongsAl? al;
+  int? dt;
+  int? mv;
   int? id;
   String? name;
   String? picUrl;
@@ -66,6 +78,10 @@ class RecommendNewSongDataDailySongsAl {
 
 @JsonSerializable()
 class RecommendNewSongDataDailySongsH {
+  List<RecommendNewSongDataDailySongsAr>? ar;
+  RecommendNewSongDataDailySongsAl? al;
+  int? dt;
+  int? mv;
   int? br;
   int? fid;
   int? size;
@@ -85,6 +101,10 @@ class RecommendNewSongDataDailySongsH {
 
 @JsonSerializable()
 class RecommendNewSongDataDailySongsM {
+  List<RecommendNewSongDataDailySongsAr>? ar;
+  RecommendNewSongDataDailySongsAl? al;
+  int? dt;
+  int? mv;
   int? br;
   int? fid;
   int? size;
@@ -104,6 +124,10 @@ class RecommendNewSongDataDailySongsM {
 
 @JsonSerializable()
 class RecommendNewSongDataDailySongsM {
+  List<RecommendNewSongDataDailySongsAr>? ar;
+  RecommendNewSongDataDailySongsAl? al;
+  int? dt;
+  int? mv;
   int? br;
   int? fid;
   int? size;
@@ -123,6 +147,10 @@ class RecommendNewSongDataDailySongsM {
 
 @JsonSerializable()
 class RecommendNewSongDataDailySongsL {
+  List<RecommendNewSongDataDailySongsAr>? ar;
+  RecommendNewSongDataDailySongsAl? al;
+  int? dt;
+  int? mv;
   int? br;
   int? fid;
   int? size;
@@ -142,6 +170,10 @@ class RecommendNewSongDataDailySongsL {
 
 @JsonSerializable()
 class RecommendNewSongDataDailySongsSq {
+  List<RecommendNewSongDataDailySongsAr>? ar;
+  RecommendNewSongDataDailySongsAl? al;
+  int? dt;
+  int? mv;
   int? br;
   int? fid;
   int? size;
@@ -161,6 +193,10 @@ class RecommendNewSongDataDailySongsSq {
 
 @JsonSerializable()
 class RecommendNewSongDataDailySongsHr {
+  List<RecommendNewSongDataDailySongsAr>? ar;
+  RecommendNewSongDataDailySongsAl? al;
+  int? dt;
+  int? mv;
   int? br;
   int? fid;
   int? size;
@@ -180,6 +216,10 @@ class RecommendNewSongDataDailySongsHr {
 
 @JsonSerializable()
 class RecommendNewSongDataDailySongsPrivilegeFreeTrialPrivilege {
+  List<RecommendNewSongDataDailySongsAr>? ar;
+  RecommendNewSongDataDailySongsAl? al;
+  int? dt;
+  int? mv;
   bool? resConsumable;
   bool? userConsumable;
   dynamic listenType;
@@ -204,6 +244,10 @@ class RecommendNewSongDataDailySongsPrivilegeFreeTrialPrivilege {
 
 @JsonSerializable()
 class RecommendNewSongDataDailySongsPrivilegeChargeInfoList {
+  List<RecommendNewSongDataDailySongsAr>? ar;
+  RecommendNewSongDataDailySongsAl? al;
+  int? dt;
+  int? mv;
   int? rate;
   dynamic chargeUrl;
   dynamic chargeMessage;
@@ -224,6 +268,10 @@ class RecommendNewSongDataDailySongsPrivilegeChargeInfoList {
 
 @JsonSerializable()
 class RecommendNewSongDataDailySongsPrivilege {
+  List<RecommendNewSongDataDailySongsAr>? ar;
+  RecommendNewSongDataDailySongsAl? al;
+  int? dt;
+  int? mv;
   int? id;
   int? fee;
   int? payed;
