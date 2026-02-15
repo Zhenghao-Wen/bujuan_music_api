@@ -4,7 +4,7 @@ version: 0.0.1
 homepage: "https://github.com/2697a/bujuan_music_api"
 
 environment:
-  sdk: ">=3.5.3 <4.0.0"
+  sdk: ">=3.8.0 <4.0.0"
 
 dependencies:
   json_annotation: ^4.10.0
