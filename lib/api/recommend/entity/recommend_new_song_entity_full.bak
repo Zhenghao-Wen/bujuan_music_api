@@ -1,0 +1,33 @@
+import 'package:json_annotation/json_annotation.dart';
+part 'recommend_new_song_entity.g.dart';
+
+@JsonSerializable()
+class RecommendNewSongEntity {
+  int? code;
+  RecommendNewSongData? data;
+  RecommendNewSongEntity();
+  factory RecommendNewSongEntity.fromJson(Map<String, dynamic> json) =>
+      _$RecommendNewSongEntityFromJson(json);
+  Map<String, dynamic> toJson() => _$RecommendNewSongEntityToJson(this);
+}
+
+@JsonSerializable()
+class RecommendNewSongData {
+  List<RecommendNewSongDataDailySongs>? dailySongs;
+  RecommendNewSongData();
+  factory RecommendNewSongData.fromJson(Map<String, dynamic> json) =>
+      _$RecommendNewSongDataFromJson(json);
+  Map<String, dynamic> toJson() => _$RecommendNewSongDataToJson(this);
+}
+
+@JsonSerializable()
+class RecommendNewSongDataDailySongs {
+  String? name;
+  int? id;
+  int? dt;
+  int? mv;
+  RecommendNewSongDataDailySongs();
+  factory RecommendNewSongDataDailySongs.fromJson(Map<String, dynamic> json) =>
+      _$RecommendNewSongDataDailySongsFromJson(json);
+  Map<String, dynamic> toJson() => _$RecommendNewSongDataDailySongsToJson(this);
+}
