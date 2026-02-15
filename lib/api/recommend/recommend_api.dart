@@ -9,13 +9,15 @@ mixin RecommendApi {
   ///
   /// 可传入可选参数 [limit] 控制返回数量（取决于API支持情况）
   Future<RecommendNewSongEntity?> recommendNewSong({int? limit}) async {
-    final options = createOption();
-    // 如果 API 支持 limit 参数，则添加到请求中
+    final queryParams = <String, dynamic>{};
     if (limit != null) {
-      options.queryParameters['limit'] = limit;
+      queryParams['limit'] = limit;
     }
-    return await BujuanMusicManager()
-        .post<RecommendNewSongEntity>(url: Api.recommendSongs, options: options);
+    return await BujuanMusicManager().post<RecommendNewSongEntity>(
+      url: Api.recommendSongs,
+      options: createOption(),
+      queryParameters: queryParams,
+    );
   }
 
   /// 每日推荐歌单（需要登录）
