@@ -2,7 +2,6 @@ import 'package:bujuan_music_api/generated/json/base/json_field.dart';
 import 'package:bujuan_music_api/generated/json/playlist_detail_entity.g.dart';
 import 'dart:convert';
 export 'package:bujuan_music_api/generated/json/playlist_detail_entity.g.dart';
-part 'playlist_detail_entity.g.dart';
 
 @JsonSerializable()
 class PlaylistDetailEntity {
