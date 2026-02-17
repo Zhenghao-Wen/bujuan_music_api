@@ -1,4 +1,3 @@
-import 'package:bujuan_music_api/generated/json/base/json_field.dart';
 import 'package:bujuan_music_api/generated/json/recommend_resource_entity.g.dart';
 import 'dart:convert';
 export 'recommend_resource_entity.g.dart';

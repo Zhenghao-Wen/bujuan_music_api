@@ -1,8 +1,6 @@
-import 'package:bujuan_music_api/generated/json/base/json_field.dart';
 import 'package:bujuan_music_api/generated/json/string_entity.g.dart';
 import 'dart:convert';
-export 'string_entity.g.dart';
-part 'string_entity.g.dart';
+export 'package:bujuan_music_api/generated/json/string_entity.g.dart';
 
 @JsonSerializable()
 class StringEntity {

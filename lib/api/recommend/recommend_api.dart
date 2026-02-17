@@ -6,7 +6,6 @@ import 'package:bujuan_music_api/common/music_interceptors.dart';
 
 mixin RecommendApi {
   Future<RecommendNewSongEntity?> recommendNewSong({int? limit}) async {
-    // 暂时忽略 limit 参数，确保编译通过
     return await BujuanMusicManager().post<RecommendNewSongEntity>(
       url: Api.recommendSongs,
       options: createOption(),

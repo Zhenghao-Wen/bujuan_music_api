@@ -1,5 +1,7 @@
+import 'package:json_annotation/json_annotation.dart';
+import 'package:bujuan_music_api/generated/json/recommend_new_song_entity.g.dart';
 import 'dart:convert';
-part 'recommend_new_song_entity.g.dart';
+export 'package:bujuan_music_api/generated/json/recommend_new_song_entity.g.dart';
 
 @JsonSerializable()
 class RecommendNewSongEntity {

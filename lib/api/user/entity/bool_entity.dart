@@ -1,8 +1,6 @@
-import 'package:bujuan_music_api/generated/json/base/json_field.dart';
 import 'package:bujuan_music_api/generated/json/bool_entity.g.dart';
 import 'dart:convert';
-export 'bool_entity.g.dart';
-part 'bool_entity.g.dart';
+export 'package:bujuan_music_api/generated/json/bool_entity.g.dart';
 
 @JsonSerializable()
 class BoolEntity {

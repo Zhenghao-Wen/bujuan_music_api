@@ -1,8 +1,6 @@
-import 'package:bujuan_music_api/generated/json/base/json_field.dart';
 import 'package:bujuan_music_api/generated/json/mv_url_entity.g.dart';
 import 'dart:convert';
-export 'mv_url_entity.g.dart';
-part 'mv_url_entity.g.dart';
+export 'package:bujuan_music_api/generated/json/mv_url_entity.g.dart';
 
 @JsonSerializable()
 class MvUrlEntity {

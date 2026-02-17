@@ -1,8 +1,6 @@
-import 'package:bujuan_music_api/generated/json/base/json_field.dart';
 import 'package:bujuan_music_api/generated/json/user_playlist_entity.g.dart';
 import 'dart:convert';
-export 'user_playlist_entity.g.dart';
-part 'user_playlist_entity.g.dart';
+export 'package:bujuan_music_api/generated/json/user_playlist_entity.g.dart';
 
 @JsonSerializable()
 class UserPlaylistEntity {
