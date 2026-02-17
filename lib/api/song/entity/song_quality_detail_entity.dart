@@ -1,7 +1,9 @@
+import 'package:json_annotation/json_annotation.dart';
 import 'package:bujuan_music_api/generated/json/base/json_field.dart';
 import 'dart:convert';
 
 import '../../../generated/json/song_quality_detail_entity.g.dart';
+part 'song_quality_detail_entity.g.dart';
 
 @JsonSerializable()
 class SongQualityDetailEntity {

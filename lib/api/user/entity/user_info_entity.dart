@@ -1,7 +1,9 @@
+import 'package:json_annotation/json_annotation.dart';
 import 'package:bujuan_music_api/generated/json/base/json_field.dart';
 import 'package:bujuan_music_api/generated/json/user_info_entity.g.dart';
 import 'dart:convert';
-export 'package:bujuan_music_api/generated/json/user_info_entity.g.dart';
+export 'user_info_entity.g.dart';
+part 'user_info_entity.g.dart';
 
 @JsonSerializable()
 class UserInfoEntity {

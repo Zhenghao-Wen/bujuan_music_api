@@ -1,7 +1,9 @@
+import 'package:json_annotation/json_annotation.dart';
 import 'package:bujuan_music_api/generated/json/base/json_field.dart';
 import 'package:bujuan_music_api/generated/json/top_artist_entity.g.dart';
 import 'dart:convert';
-export 'package:bujuan_music_api/generated/json/top_artist_entity.g.dart';
+export 'top_artist_entity.g.dart';
+part 'top_artist_entity.g.dart';
 
 @JsonSerializable()
 class TopArtistEntity {
