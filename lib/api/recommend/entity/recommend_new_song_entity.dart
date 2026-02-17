@@ -1,4 +1,3 @@
-import 'package:json_annotation/json_annotation.dart';
 import 'dart:convert';
 part 'recommend_new_song_entity.g.dart';
 

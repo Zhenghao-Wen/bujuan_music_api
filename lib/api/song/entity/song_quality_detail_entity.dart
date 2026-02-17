@@ -1,4 +1,3 @@
-import 'package:json_annotation/json_annotation.dart';
 import 'package:bujuan_music_api/generated/json/base/json_field.dart';
 import 'dart:convert';
 
