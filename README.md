@@ -1,4 +1,7 @@
 
+## Deprecated
+发现问题不在此，已弃坑
+
 ## BujuanMusicApi
 三方音乐API
 
