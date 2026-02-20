@@ -7,9 +7,8 @@
 import 'package:meta/meta_meta.dart';
 
 @Target({TargetKind.classType})
-class JsonSerializable {
-  const JsonSerializable();
-}
+/*
+*/
 
 @Target({TargetKind.field})
 class JSONField {
@@ -30,3 +29,4 @@ class JSONField {
   
   const JSONField({this.name, this.serialize, this.deserialize, this.isEnum, this.copyWith});
 }
+*/
