@@ -1,29 +1,56 @@
+import 'package:json_annotation/json_annotation.dart';
 import 'package:bujuan_music_api/generated/json/base/json_field.dart';
 import 'package:bujuan_music_api/generated/json/login_entity.g.dart';
 import 'dart:convert';
+
 export 'package:bujuan_music_api/generated/json/login_entity.g.dart';
 
 @JsonSerializable()
 class LoginEntity {
-	int? loginType = 0;
-	String? clientId = '';
-	int? effectTime = 0;
-	int? code = 0;
-	LoginAccount? account;
-	String? token = '';
-	LoginProfile? profile;
-	List<LoginBindings>? bindings = [];
+  int? loginType;
+  String? clientId;
+  int? effectTime;
+  int? code;
+  String? message; // 新增字段
+  LoginAccount? account;
+  String? token;
+  LoginProfile? profile;
+  List<LoginBindings>? bindings;
 
-	LoginEntity();
+  LoginEntity();
 
-	factory LoginEntity.fromJson(Map<String, dynamic> json) => $LoginEntityFromJson(json);
+  factory LoginEntity.fromJson(Map<String, dynamic> json) => $LoginEntityFromJson(json);
 
-	Map<String, dynamic> toJson() => $LoginEntityToJson(this);
+  Map<String, dynamic> toJson() => $LoginEntityToJson(this);
 
-	@override
-	String toString() {
-		return jsonEncode(this);
-	}
+  @override
+  String toString() => jsonEncode(this);
+}
+
+// 以下内部类保持原样，务必保留
+@JsonSerializable()
+class LoginAccount {
+    int? id;
+    String? userName;
+    int? type;
+    int? status;
+    int? whitelistAuthority;
+    int? createTime;
+    String? salt;
+    int? tokenVersion;
+    int? ban;
+    int? baoyueVersion;
+    int? donateVersion;
+    int? vipType;
+    int? viptypeVersion;
+    bool? anonimousUser;
+    bool? uninitialized;
+
+    LoginAccount();
+    factory LoginAccount.fromJson(Map<String, dynamic> json) => $LoginAccountFromJson(json);
+    Map<String, dynamic> toJson() => $LoginAccountToJson(this);
+    @override
+    String toString() => jsonEncode(this);
 }
 
 @JsonSerializable()
