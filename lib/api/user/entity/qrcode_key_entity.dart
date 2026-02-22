@@ -10,9 +10,9 @@ class QrcodeKeyEntity {
 
 	QrcodeKeyEntity();
 
-	factory QrcodeKeyEntity.fromJson(Map<String, dynamic> json) => $QrcodeKeyEntityFromJson(json);
+	factory QrcodeKeyEntity.fromJson(Map<String, dynamic> json) => _QrcodeKeyEntityFromJson(json);
 
-	Map<String, dynamic> toJson() => $QrcodeKeyEntityToJson(this);
+	Map<String, dynamic> toJson() => _QrcodeKeyEntityToJson(this);
 
 	@override
 	String toString() {

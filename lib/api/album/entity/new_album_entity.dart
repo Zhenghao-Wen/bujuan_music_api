@@ -11,9 +11,9 @@ class NewAlbumEntity {
 
 	NewAlbumEntity();
 
-	factory NewAlbumEntity.fromJson(Map<String, dynamic> json) => $NewAlbumEntityFromJson(json);
+	factory NewAlbumEntity.fromJson(Map<String, dynamic> json) => _NewAlbumEntityFromJson(json);
 
-	Map<String, dynamic> toJson() => $NewAlbumEntityToJson(this);
+	Map<String, dynamic> toJson() => _NewAlbumEntityToJson(this);
 
 	@override
 	String toString() {
@@ -55,9 +55,9 @@ class NewAlbumAlbums {
 
 	NewAlbumAlbums();
 
-	factory NewAlbumAlbums.fromJson(Map<String, dynamic> json) => $NewAlbumAlbumsFromJson(json);
+	factory NewAlbumAlbums.fromJson(Map<String, dynamic> json) => _NewAlbumAlbumsFromJson(json);
 
-	Map<String, dynamic> toJson() => $NewAlbumAlbumsToJson(this);
+	Map<String, dynamic> toJson() => _NewAlbumAlbumsToJson(this);
 
 	@override
 	String toString() {
@@ -85,9 +85,9 @@ class NewAlbumAlbumsArtists {
 
 	NewAlbumAlbumsArtists();
 
-	factory NewAlbumAlbumsArtists.fromJson(Map<String, dynamic> json) => $NewAlbumAlbumsArtistsFromJson(json);
+	factory NewAlbumAlbumsArtists.fromJson(Map<String, dynamic> json) => _NewAlbumAlbumsArtistsFromJson(json);
 
-	Map<String, dynamic> toJson() => $NewAlbumAlbumsArtistsToJson(this);
+	Map<String, dynamic> toJson() => _NewAlbumAlbumsArtistsToJson(this);
 
 	@override
 	String toString() {
@@ -118,9 +118,9 @@ class NewAlbumAlbumsArtist {
 
 	NewAlbumAlbumsArtist();
 
-	factory NewAlbumAlbumsArtist.fromJson(Map<String, dynamic> json) => $NewAlbumAlbumsArtistFromJson(json);
+	factory NewAlbumAlbumsArtist.fromJson(Map<String, dynamic> json) => _NewAlbumAlbumsArtistFromJson(json);
 
-	Map<String, dynamic> toJson() => $NewAlbumAlbumsArtistToJson(this);
+	Map<String, dynamic> toJson() => _NewAlbumAlbumsArtistToJson(this);
 
 	@override
 	String toString() {

@@ -10,9 +10,9 @@ class QrCheckEntity {
 
 	QrCheckEntity();
 
-	factory QrCheckEntity.fromJson(Map<String, dynamic> json) => $QrCheckEntityFromJson(json);
+	factory QrCheckEntity.fromJson(Map<String, dynamic> json) => _QrCheckEntityFromJson(json);
 
-	Map<String, dynamic> toJson() => $QrCheckEntityToJson(this);
+	Map<String, dynamic> toJson() => _QrCheckEntityToJson(this);
 
 	@override
 	String toString() {

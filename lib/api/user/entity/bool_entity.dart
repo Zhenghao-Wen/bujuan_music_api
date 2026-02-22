@@ -11,9 +11,9 @@ class BoolEntity {
 
   BoolEntity();
 
-  factory BoolEntity.fromJson(Map<String, dynamic> json) => $BoolEntityFromJson(json);
+  factory BoolEntity.fromJson(Map<String, dynamic> json) => _BoolEntityFromJson(json);
 
-  Map<String, dynamic> toJson() => $BoolEntityToJson(this);
+  Map<String, dynamic> toJson() => _BoolEntityToJson(this);
 
   @override
   String toString() {

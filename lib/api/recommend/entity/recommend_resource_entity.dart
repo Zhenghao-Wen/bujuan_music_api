@@ -12,9 +12,9 @@ class RecommendResourceEntity {
 
 	RecommendResourceEntity();
 
-	factory RecommendResourceEntity.fromJson(Map<String, dynamic> json) => $RecommendResourceEntityFromJson(json);
+	factory RecommendResourceEntity.fromJson(Map<String, dynamic> json) => _RecommendResourceEntityFromJson(json);
 
-	Map<String, dynamic> toJson() => $RecommendResourceEntityToJson(this);
+	Map<String, dynamic> toJson() => _RecommendResourceEntityToJson(this);
 
 	@override
 	String toString() {
@@ -38,9 +38,9 @@ class RecommendResourceRecommend {
 
 	RecommendResourceRecommend();
 
-	factory RecommendResourceRecommend.fromJson(Map<String, dynamic> json) => $RecommendResourceRecommendFromJson(json);
+	factory RecommendResourceRecommend.fromJson(Map<String, dynamic> json) => _RecommendResourceRecommendFromJson(json);
 
-	Map<String, dynamic> toJson() => $RecommendResourceRecommendToJson(this);
+	Map<String, dynamic> toJson() => _RecommendResourceRecommendToJson(this);
 
 	@override
 	String toString() {
@@ -79,9 +79,9 @@ class RecommendResourceRecommendCreator {
 
 	RecommendResourceRecommendCreator();
 
-	factory RecommendResourceRecommendCreator.fromJson(Map<String, dynamic> json) => $RecommendResourceRecommendCreatorFromJson(json);
+	factory RecommendResourceRecommendCreator.fromJson(Map<String, dynamic> json) => _RecommendResourceRecommendCreatorFromJson(json);
 
-	Map<String, dynamic> toJson() => $RecommendResourceRecommendCreatorToJson(this);
+	Map<String, dynamic> toJson() => _RecommendResourceRecommendCreatorToJson(this);
 
 	@override
 	String toString() {

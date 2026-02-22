@@ -12,7 +12,7 @@ class QrCheckResultEntity {
 
   QrCheckResultEntity();
 
-  factory QrCheckResultEntity.fromJson(Map<String, dynamic> json) => $QrCheckResultEntityFromJson(json);
-  Map<String, dynamic> toJson() => $QrCheckResultEntityToJson(this);
+  factory QrCheckResultEntity.fromJson(Map<String, dynamic> json) => _QrCheckResultEntityFromJson(json);
+  Map<String, dynamic> toJson() => _QrCheckResultEntityToJson(this);
   @override String toString() => jsonEncode(this);
 }

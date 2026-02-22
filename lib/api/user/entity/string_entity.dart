@@ -11,9 +11,9 @@ class StringEntity {
 
 	StringEntity();
 
-	factory StringEntity.fromJson(Map<String, dynamic> json) => $StringEntityFromJson(json);
+	factory StringEntity.fromJson(Map<String, dynamic> json) => _StringEntityFromJson(json);
 
-	Map<String, dynamic> toJson() => $StringEntityToJson(this);
+	Map<String, dynamic> toJson() => _StringEntityToJson(this);
 
 	@override
 	String toString() {

@@ -10,9 +10,9 @@ class SongLikeCheckEntity {
 
 	SongLikeCheckEntity();
 
-	factory SongLikeCheckEntity.fromJson(Map<String, dynamic> json) => $SongLikeCheckEntityFromJson(json);
+	factory SongLikeCheckEntity.fromJson(Map<String, dynamic> json) => _SongLikeCheckEntityFromJson(json);
 
-	Map<String, dynamic> toJson() => $SongLikeCheckEntityToJson(this);
+	Map<String, dynamic> toJson() => _SongLikeCheckEntityToJson(this);
 
 	@override
 	String toString() {

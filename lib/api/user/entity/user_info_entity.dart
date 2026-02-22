@@ -10,9 +10,9 @@ class UserInfoEntity {
 
 	UserInfoEntity();
 
-	factory UserInfoEntity.fromJson(Map<String, dynamic> json) => $UserInfoEntityFromJson(json);
+	factory UserInfoEntity.fromJson(Map<String, dynamic> json) => _UserInfoEntityFromJson(json);
 
-	Map<String, dynamic> toJson() => $UserInfoEntityToJson(this);
+	Map<String, dynamic> toJson() => _UserInfoEntityToJson(this);
 
 	@override
 	String toString() {
@@ -38,9 +38,9 @@ class UserInfoAccount {
 
 	UserInfoAccount();
 
-	factory UserInfoAccount.fromJson(Map<String, dynamic> json) => $UserInfoAccountFromJson(json);
+	factory UserInfoAccount.fromJson(Map<String, dynamic> json) => _UserInfoAccountFromJson(json);
 
-	Map<String, dynamic> toJson() => $UserInfoAccountToJson(this);
+	Map<String, dynamic> toJson() => _UserInfoAccountToJson(this);
 
 	@override
 	String toString() {
@@ -90,9 +90,9 @@ class UserInfoProfile {
 
 	UserInfoProfile();
 
-	factory UserInfoProfile.fromJson(Map<String, dynamic> json) => $UserInfoProfileFromJson(json);
+	factory UserInfoProfile.fromJson(Map<String, dynamic> json) => _UserInfoProfileFromJson(json);
 
-	Map<String, dynamic> toJson() => $UserInfoProfileToJson(this);
+	Map<String, dynamic> toJson() => _UserInfoProfileToJson(this);
 
 	@override
 	String toString() {
