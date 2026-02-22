@@ -1,6 +1,5 @@
 import 'package:json_annotation/json_annotation.dart';
 import 'package:bujuan_music_api/generated/json/base/json_field.dart';
-import 'package:bujuan_music_api/generated/json/song_detail_entity.g.dart';
 import 'dart:convert';
 part 'song_detail_entity.g.dart';
 
