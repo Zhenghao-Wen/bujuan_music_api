@@ -11,9 +11,9 @@ class CreatePlaylistEntity {
 
 	CreatePlaylistEntity();
 
-	factory CreatePlaylistEntity.fromJson(Map<String, dynamic> json) => _CreatePlaylistEntityFromJson(json);
+	factory CreatePlaylistEntity.fromJson(Map<String, dynamic> json) => _$CreatePlaylistEntityFromJson(json);
 
-	Map<String, dynamic> toJson() => _CreatePlaylistEntityToJson(this);
+	Map<String, dynamic> toJson() => _$CreatePlaylistEntityToJson(this);
 
 	@override
 	String toString() {
@@ -71,9 +71,9 @@ class CreatePlaylistPlaylist {
 
 	CreatePlaylistPlaylist();
 
-	factory CreatePlaylistPlaylist.fromJson(Map<String, dynamic> json) => _CreatePlaylistPlaylistFromJson(json);
+	factory CreatePlaylistPlaylist.fromJson(Map<String, dynamic> json) => _$CreatePlaylistPlaylistFromJson(json);
 
-	Map<String, dynamic> toJson() => _CreatePlaylistPlaylistToJson(this);
+	Map<String, dynamic> toJson() => _$CreatePlaylistPlaylistToJson(this);
 
 	@override
 	String toString() {

@@ -11,9 +11,9 @@ class LikeListEntity {
 
 	LikeListEntity();
 
-	factory LikeListEntity.fromJson(Map<String, dynamic> json) => _LikeListEntityFromJson(json);
+	factory LikeListEntity.fromJson(Map<String, dynamic> json) => _$LikeListEntityFromJson(json);
 
-	Map<String, dynamic> toJson() => _LikeListEntityToJson(this);
+	Map<String, dynamic> toJson() => _$LikeListEntityToJson(this);
 
 	@override
 	String toString() {

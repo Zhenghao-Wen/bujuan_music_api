@@ -11,9 +11,9 @@ class TopArtistEntity {
 
 	TopArtistEntity();
 
-	factory TopArtistEntity.fromJson(Map<String, dynamic> json) => _TopArtistEntityFromJson(json);
+	factory TopArtistEntity.fromJson(Map<String, dynamic> json) => _$TopArtistEntityFromJson(json);
 
-	Map<String, dynamic> toJson() => _TopArtistEntityToJson(this);
+	Map<String, dynamic> toJson() => _$TopArtistEntityToJson(this);
 
 	@override
 	String toString() {
@@ -48,9 +48,9 @@ class TopArtistArtists {
 
 	TopArtistArtists();
 
-	factory TopArtistArtists.fromJson(Map<String, dynamic> json) => _TopArtistArtistsFromJson(json);
+	factory TopArtistArtists.fromJson(Map<String, dynamic> json) => _$TopArtistArtistsFromJson(json);
 
-	Map<String, dynamic> toJson() => _TopArtistArtistsToJson(this);
+	Map<String, dynamic> toJson() => _$TopArtistArtistsToJson(this);
 
 	@override
 	String toString() {

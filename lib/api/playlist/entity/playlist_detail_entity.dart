@@ -18,9 +18,9 @@ class PlaylistDetailEntity {
 
 	PlaylistDetailEntity();
 
-	factory PlaylistDetailEntity.fromJson(Map<String, dynamic> json) => _PlaylistDetailEntityFromJson(json);
+	factory PlaylistDetailEntity.fromJson(Map<String, dynamic> json) => _$PlaylistDetailEntityFromJson(json);
 
-	Map<String, dynamic> toJson() => _PlaylistDetailEntityToJson(this);
+	Map<String, dynamic> toJson() => _$PlaylistDetailEntityToJson(this);
 
 	@override
 	String toString() {
@@ -94,9 +94,9 @@ class PlaylistDetailPlaylist {
 
 	PlaylistDetailPlaylist();
 
-	factory PlaylistDetailPlaylist.fromJson(Map<String, dynamic> json) => _PlaylistDetailPlaylistFromJson(json);
+	factory PlaylistDetailPlaylist.fromJson(Map<String, dynamic> json) => _$PlaylistDetailPlaylistFromJson(json);
 
-	Map<String, dynamic> toJson() => _PlaylistDetailPlaylistToJson(this);
+	Map<String, dynamic> toJson() => _$PlaylistDetailPlaylistToJson(this);
 
 	@override
 	String toString() {
@@ -141,9 +141,9 @@ class PlaylistDetailPlaylistSubscribers {
 
 	PlaylistDetailPlaylistSubscribers();
 
-	factory PlaylistDetailPlaylistSubscribers.fromJson(Map<String, dynamic> json) => _PlaylistDetailPlaylistSubscribersFromJson(json);
+	factory PlaylistDetailPlaylistSubscribers.fromJson(Map<String, dynamic> json) => _$PlaylistDetailPlaylistSubscribersFromJson(json);
 
-	Map<String, dynamic> toJson() => _PlaylistDetailPlaylistSubscribersToJson(this);
+	Map<String, dynamic> toJson() => _$PlaylistDetailPlaylistSubscribersToJson(this);
 
 	@override
 	String toString() {
@@ -188,9 +188,9 @@ class PlaylistDetailPlaylistCreator {
 
 	PlaylistDetailPlaylistCreator();
 
-	factory PlaylistDetailPlaylistCreator.fromJson(Map<String, dynamic> json) => _PlaylistDetailPlaylistCreatorFromJson(json);
+	factory PlaylistDetailPlaylistCreator.fromJson(Map<String, dynamic> json) => _$PlaylistDetailPlaylistCreatorFromJson(json);
 
-	Map<String, dynamic> toJson() => _PlaylistDetailPlaylistCreatorToJson(this);
+	Map<String, dynamic> toJson() => _$PlaylistDetailPlaylistCreatorToJson(this);
 
 	@override
 	String toString() {
@@ -206,9 +206,9 @@ class PlaylistDetailPlaylistCreatorAvatarDetail {
 
 	PlaylistDetailPlaylistCreatorAvatarDetail();
 
-	factory PlaylistDetailPlaylistCreatorAvatarDetail.fromJson(Map<String, dynamic> json) => _PlaylistDetailPlaylistCreatorAvatarDetailFromJson(json);
+	factory PlaylistDetailPlaylistCreatorAvatarDetail.fromJson(Map<String, dynamic> json) => _$PlaylistDetailPlaylistCreatorAvatarDetailFromJson(json);
 
-	Map<String, dynamic> toJson() => _PlaylistDetailPlaylistCreatorAvatarDetailToJson(this);
+	Map<String, dynamic> toJson() => _$PlaylistDetailPlaylistCreatorAvatarDetailToJson(this);
 
 	@override
 	String toString() {
@@ -271,9 +271,9 @@ class PlaylistDetailPlaylistTracks {
 
 	PlaylistDetailPlaylistTracks();
 
-	factory PlaylistDetailPlaylistTracks.fromJson(Map<String, dynamic> json) => _PlaylistDetailPlaylistTracksFromJson(json);
+	factory PlaylistDetailPlaylistTracks.fromJson(Map<String, dynamic> json) => _$PlaylistDetailPlaylistTracksFromJson(json);
 
-	Map<String, dynamic> toJson() => _PlaylistDetailPlaylistTracksToJson(this);
+	Map<String, dynamic> toJson() => _$PlaylistDetailPlaylistTracksToJson(this);
 
 	@override
 	String toString() {
@@ -290,9 +290,9 @@ class PlaylistDetailPlaylistTracksAr {
 
 	PlaylistDetailPlaylistTracksAr();
 
-	factory PlaylistDetailPlaylistTracksAr.fromJson(Map<String, dynamic> json) => _PlaylistDetailPlaylistTracksArFromJson(json);
+	factory PlaylistDetailPlaylistTracksAr.fromJson(Map<String, dynamic> json) => _$PlaylistDetailPlaylistTracksArFromJson(json);
 
-	Map<String, dynamic> toJson() => _PlaylistDetailPlaylistTracksArToJson(this);
+	Map<String, dynamic> toJson() => _$PlaylistDetailPlaylistTracksArToJson(this);
 
 	@override
 	String toString() {
@@ -312,9 +312,9 @@ class PlaylistDetailPlaylistTracksAl {
 
 	PlaylistDetailPlaylistTracksAl();
 
-	factory PlaylistDetailPlaylistTracksAl.fromJson(Map<String, dynamic> json) => _PlaylistDetailPlaylistTracksAlFromJson(json);
+	factory PlaylistDetailPlaylistTracksAl.fromJson(Map<String, dynamic> json) => _$PlaylistDetailPlaylistTracksAlFromJson(json);
 
-	Map<String, dynamic> toJson() => _PlaylistDetailPlaylistTracksAlToJson(this);
+	Map<String, dynamic> toJson() => _$PlaylistDetailPlaylistTracksAlToJson(this);
 
 	@override
 	String toString() {
@@ -331,9 +331,9 @@ class PlaylistDetailPlaylistTracksH {
 
 	PlaylistDetailPlaylistTracksH();
 
-	factory PlaylistDetailPlaylistTracksH.fromJson(Map<String, dynamic> json) => _PlaylistDetailPlaylistTracksHFromJson(json);
+	factory PlaylistDetailPlaylistTracksH.fromJson(Map<String, dynamic> json) => _$PlaylistDetailPlaylistTracksHFromJson(json);
 
-	Map<String, dynamic> toJson() => _PlaylistDetailPlaylistTracksHToJson(this);
+	Map<String, dynamic> toJson() => _$PlaylistDetailPlaylistTracksHToJson(this);
 
 	@override
 	String toString() {
@@ -350,9 +350,9 @@ class PlaylistDetailPlaylistTracksM {
 
 	PlaylistDetailPlaylistTracksM();
 
-	factory PlaylistDetailPlaylistTracksM.fromJson(Map<String, dynamic> json) => _PlaylistDetailPlaylistTracksMFromJson(json);
+	factory PlaylistDetailPlaylistTracksM.fromJson(Map<String, dynamic> json) => _$PlaylistDetailPlaylistTracksMFromJson(json);
 
-	Map<String, dynamic> toJson() => _PlaylistDetailPlaylistTracksMToJson(this);
+	Map<String, dynamic> toJson() => _$PlaylistDetailPlaylistTracksMToJson(this);
 
 	@override
 	String toString() {
@@ -369,9 +369,9 @@ class PlaylistDetailPlaylistTracksL {
 
 	PlaylistDetailPlaylistTracksL();
 
-	factory PlaylistDetailPlaylistTracksL.fromJson(Map<String, dynamic> json) => _PlaylistDetailPlaylistTracksLFromJson(json);
+	factory PlaylistDetailPlaylistTracksL.fromJson(Map<String, dynamic> json) => _$PlaylistDetailPlaylistTracksLFromJson(json);
 
-	Map<String, dynamic> toJson() => _PlaylistDetailPlaylistTracksLToJson(this);
+	Map<String, dynamic> toJson() => _$PlaylistDetailPlaylistTracksLToJson(this);
 
 	@override
 	String toString() {
@@ -388,9 +388,9 @@ class PlaylistDetailPlaylistTracksSq {
 
 	PlaylistDetailPlaylistTracksSq();
 
-	factory PlaylistDetailPlaylistTracksSq.fromJson(Map<String, dynamic> json) => _PlaylistDetailPlaylistTracksSqFromJson(json);
+	factory PlaylistDetailPlaylistTracksSq.fromJson(Map<String, dynamic> json) => _$PlaylistDetailPlaylistTracksSqFromJson(json);
 
-	Map<String, dynamic> toJson() => _PlaylistDetailPlaylistTracksSqToJson(this);
+	Map<String, dynamic> toJson() => _$PlaylistDetailPlaylistTracksSqToJson(this);
 
 	@override
 	String toString() {
@@ -407,9 +407,9 @@ class PlaylistDetailPlaylistTracksHr {
 
 	PlaylistDetailPlaylistTracksHr();
 
-	factory PlaylistDetailPlaylistTracksHr.fromJson(Map<String, dynamic> json) => _PlaylistDetailPlaylistTracksHrFromJson(json);
+	factory PlaylistDetailPlaylistTracksHr.fromJson(Map<String, dynamic> json) => _$PlaylistDetailPlaylistTracksHrFromJson(json);
 
-	Map<String, dynamic> toJson() => _PlaylistDetailPlaylistTracksHrToJson(this);
+	Map<String, dynamic> toJson() => _$PlaylistDetailPlaylistTracksHrToJson(this);
 
 	@override
 	String toString() {
@@ -434,9 +434,9 @@ class PlaylistDetailPlaylistTrackIds {
 
 	PlaylistDetailPlaylistTrackIds();
 
-	factory PlaylistDetailPlaylistTrackIds.fromJson(Map<String, dynamic> json) => _PlaylistDetailPlaylistTrackIdsFromJson(json);
+	factory PlaylistDetailPlaylistTrackIds.fromJson(Map<String, dynamic> json) => _$PlaylistDetailPlaylistTrackIdsFromJson(json);
 
-	Map<String, dynamic> toJson() => _PlaylistDetailPlaylistTrackIdsToJson(this);
+	Map<String, dynamic> toJson() => _$PlaylistDetailPlaylistTrackIdsToJson(this);
 
 	@override
 	String toString() {
@@ -450,9 +450,9 @@ class PlaylistDetailPlaylistBizExtInfo {
 
 	PlaylistDetailPlaylistBizExtInfo();
 
-	factory PlaylistDetailPlaylistBizExtInfo.fromJson(Map<String, dynamic> json) => _PlaylistDetailPlaylistBizExtInfoFromJson(json);
+	factory PlaylistDetailPlaylistBizExtInfo.fromJson(Map<String, dynamic> json) => _$PlaylistDetailPlaylistBizExtInfoFromJson(json);
 
-	Map<String, dynamic> toJson() => _PlaylistDetailPlaylistBizExtInfoToJson(this);
+	Map<String, dynamic> toJson() => _$PlaylistDetailPlaylistBizExtInfoToJson(this);
 
 	@override
 	String toString() {
@@ -499,9 +499,9 @@ class PlaylistDetailPrivileges {
 
 	PlaylistDetailPrivileges();
 
-	factory PlaylistDetailPrivileges.fromJson(Map<String, dynamic> json) => _PlaylistDetailPrivilegesFromJson(json);
+	factory PlaylistDetailPrivileges.fromJson(Map<String, dynamic> json) => _$PlaylistDetailPrivilegesFromJson(json);
 
-	Map<String, dynamic> toJson() => _PlaylistDetailPrivilegesToJson(this);
+	Map<String, dynamic> toJson() => _$PlaylistDetailPrivilegesToJson(this);
 
 	@override
 	String toString() {
@@ -520,9 +520,9 @@ class PlaylistDetailPrivilegesFreeTrialPrivilege {
 
 	PlaylistDetailPrivilegesFreeTrialPrivilege();
 
-	factory PlaylistDetailPrivilegesFreeTrialPrivilege.fromJson(Map<String, dynamic> json) => _PlaylistDetailPrivilegesFreeTrialPrivilegeFromJson(json);
+	factory PlaylistDetailPrivilegesFreeTrialPrivilege.fromJson(Map<String, dynamic> json) => _$PlaylistDetailPrivilegesFreeTrialPrivilegeFromJson(json);
 
-	Map<String, dynamic> toJson() => _PlaylistDetailPrivilegesFreeTrialPrivilegeToJson(this);
+	Map<String, dynamic> toJson() => _$PlaylistDetailPrivilegesFreeTrialPrivilegeToJson(this);
 
 	@override
 	String toString() {
@@ -539,9 +539,9 @@ class PlaylistDetailPrivilegesChargeInfoList {
 
 	PlaylistDetailPrivilegesChargeInfoList();
 
-	factory PlaylistDetailPrivilegesChargeInfoList.fromJson(Map<String, dynamic> json) => _PlaylistDetailPrivilegesChargeInfoListFromJson(json);
+	factory PlaylistDetailPrivilegesChargeInfoList.fromJson(Map<String, dynamic> json) => _$PlaylistDetailPrivilegesChargeInfoListFromJson(json);
 
-	Map<String, dynamic> toJson() => _PlaylistDetailPrivilegesChargeInfoListToJson(this);
+	Map<String, dynamic> toJson() => _$PlaylistDetailPrivilegesChargeInfoListToJson(this);
 
 	@override
 	String toString() {

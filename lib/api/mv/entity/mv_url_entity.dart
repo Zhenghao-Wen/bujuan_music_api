@@ -10,9 +10,9 @@ class MvUrlEntity {
 
 	MvUrlEntity();
 
-	factory MvUrlEntity.fromJson(Map<String, dynamic> json) => _MvUrlEntityFromJson(json);
+	factory MvUrlEntity.fromJson(Map<String, dynamic> json) => _$MvUrlEntityFromJson(json);
 
-	Map<String, dynamic> toJson() => _MvUrlEntityToJson(this);
+	Map<String, dynamic> toJson() => _$MvUrlEntityToJson(this);
 
 	@override
 	String toString() {
@@ -36,9 +36,9 @@ class MvUrlData {
 
 	MvUrlData();
 
-	factory MvUrlData.fromJson(Map<String, dynamic> json) => _MvUrlDataFromJson(json);
+	factory MvUrlData.fromJson(Map<String, dynamic> json) => _$MvUrlDataFromJson(json);
 
-	Map<String, dynamic> toJson() => _MvUrlDataToJson(this);
+	Map<String, dynamic> toJson() => _$MvUrlDataToJson(this);
 
 	@override
 	String toString() {

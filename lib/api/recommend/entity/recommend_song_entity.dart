@@ -10,9 +10,9 @@ class RecommendSongEntity {
 
 	RecommendSongEntity();
 
-	factory RecommendSongEntity.fromJson(Map<String, dynamic> json) => _RecommendSongEntityFromJson(json);
+	factory RecommendSongEntity.fromJson(Map<String, dynamic> json) => _$RecommendSongEntityFromJson(json);
 
-	Map<String, dynamic> toJson() => _RecommendSongEntityToJson(this);
+	Map<String, dynamic> toJson() => _$RecommendSongEntityToJson(this);
 
 	@override
 	String toString() {
@@ -30,9 +30,9 @@ class RecommendSongData {
 
 	RecommendSongData();
 
-	factory RecommendSongData.fromJson(Map<String, dynamic> json) => _RecommendSongDataFromJson(json);
+	factory RecommendSongData.fromJson(Map<String, dynamic> json) => _$RecommendSongDataFromJson(json);
 
-	Map<String, dynamic> toJson() => _RecommendSongDataToJson(this);
+	Map<String, dynamic> toJson() => _$RecommendSongDataToJson(this);
 
 	@override
 	String toString() {
@@ -96,9 +96,9 @@ class RecommendSongDataDailySongs {
 
 	RecommendSongDataDailySongs();
 
-	factory RecommendSongDataDailySongs.fromJson(Map<String, dynamic> json) => _RecommendSongDataDailySongsFromJson(json);
+	factory RecommendSongDataDailySongs.fromJson(Map<String, dynamic> json) => _$RecommendSongDataDailySongsFromJson(json);
 
-	Map<String, dynamic> toJson() => _RecommendSongDataDailySongsToJson(this);
+	Map<String, dynamic> toJson() => _$RecommendSongDataDailySongsToJson(this);
 
 	@override
 	String toString() {
@@ -115,9 +115,9 @@ class RecommendSongDataDailySongsAr {
 
 	RecommendSongDataDailySongsAr();
 
-	factory RecommendSongDataDailySongsAr.fromJson(Map<String, dynamic> json) => _RecommendSongDataDailySongsArFromJson(json);
+	factory RecommendSongDataDailySongsAr.fromJson(Map<String, dynamic> json) => _$RecommendSongDataDailySongsArFromJson(json);
 
-	Map<String, dynamic> toJson() => _RecommendSongDataDailySongsArToJson(this);
+	Map<String, dynamic> toJson() => _$RecommendSongDataDailySongsArToJson(this);
 
 	@override
 	String toString() {
@@ -137,9 +137,9 @@ class RecommendSongDataDailySongsAl {
 
 	RecommendSongDataDailySongsAl();
 
-	factory RecommendSongDataDailySongsAl.fromJson(Map<String, dynamic> json) => _RecommendSongDataDailySongsAlFromJson(json);
+	factory RecommendSongDataDailySongsAl.fromJson(Map<String, dynamic> json) => _$RecommendSongDataDailySongsAlFromJson(json);
 
-	Map<String, dynamic> toJson() => _RecommendSongDataDailySongsAlToJson(this);
+	Map<String, dynamic> toJson() => _$RecommendSongDataDailySongsAlToJson(this);
 
 	@override
 	String toString() {
@@ -157,9 +157,9 @@ class RecommendSongDataDailySongsH {
 
 	RecommendSongDataDailySongsH();
 
-	factory RecommendSongDataDailySongsH.fromJson(Map<String, dynamic> json) => _RecommendSongDataDailySongsHFromJson(json);
+	factory RecommendSongDataDailySongsH.fromJson(Map<String, dynamic> json) => _$RecommendSongDataDailySongsHFromJson(json);
 
-	Map<String, dynamic> toJson() => _RecommendSongDataDailySongsHToJson(this);
+	Map<String, dynamic> toJson() => _$RecommendSongDataDailySongsHToJson(this);
 
 	@override
 	String toString() {
@@ -177,9 +177,9 @@ class RecommendSongDataDailySongsM {
 
 	RecommendSongDataDailySongsM();
 
-	factory RecommendSongDataDailySongsM.fromJson(Map<String, dynamic> json) => _RecommendSongDataDailySongsMFromJson(json);
+	factory RecommendSongDataDailySongsM.fromJson(Map<String, dynamic> json) => _$RecommendSongDataDailySongsMFromJson(json);
 
-	Map<String, dynamic> toJson() => _RecommendSongDataDailySongsMToJson(this);
+	Map<String, dynamic> toJson() => _$RecommendSongDataDailySongsMToJson(this);
 
 	@override
 	String toString() {
@@ -197,9 +197,9 @@ class RecommendSongDataDailySongsL {
 
 	RecommendSongDataDailySongsL();
 
-	factory RecommendSongDataDailySongsL.fromJson(Map<String, dynamic> json) => _RecommendSongDataDailySongsLFromJson(json);
+	factory RecommendSongDataDailySongsL.fromJson(Map<String, dynamic> json) => _$RecommendSongDataDailySongsLFromJson(json);
 
-	Map<String, dynamic> toJson() => _RecommendSongDataDailySongsLToJson(this);
+	Map<String, dynamic> toJson() => _$RecommendSongDataDailySongsLToJson(this);
 
 	@override
 	String toString() {
@@ -217,9 +217,9 @@ class RecommendSongDataDailySongsSq {
 
 	RecommendSongDataDailySongsSq();
 
-	factory RecommendSongDataDailySongsSq.fromJson(Map<String, dynamic> json) => _RecommendSongDataDailySongsSqFromJson(json);
+	factory RecommendSongDataDailySongsSq.fromJson(Map<String, dynamic> json) => _$RecommendSongDataDailySongsSqFromJson(json);
 
-	Map<String, dynamic> toJson() => _RecommendSongDataDailySongsSqToJson(this);
+	Map<String, dynamic> toJson() => _$RecommendSongDataDailySongsSqToJson(this);
 
 	@override
 	String toString() {
@@ -237,9 +237,9 @@ class RecommendSongDataDailySongsHr {
 
 	RecommendSongDataDailySongsHr();
 
-	factory RecommendSongDataDailySongsHr.fromJson(Map<String, dynamic> json) => _RecommendSongDataDailySongsHrFromJson(json);
+	factory RecommendSongDataDailySongsHr.fromJson(Map<String, dynamic> json) => _$RecommendSongDataDailySongsHrFromJson(json);
 
-	Map<String, dynamic> toJson() => _RecommendSongDataDailySongsHrToJson(this);
+	Map<String, dynamic> toJson() => _$RecommendSongDataDailySongsHrToJson(this);
 
 	@override
 	String toString() {
@@ -284,9 +284,9 @@ class RecommendSongDataDailySongsPrivilege {
 
 	RecommendSongDataDailySongsPrivilege();
 
-	factory RecommendSongDataDailySongsPrivilege.fromJson(Map<String, dynamic> json) => _RecommendSongDataDailySongsPrivilegeFromJson(json);
+	factory RecommendSongDataDailySongsPrivilege.fromJson(Map<String, dynamic> json) => _$RecommendSongDataDailySongsPrivilegeFromJson(json);
 
-	Map<String, dynamic> toJson() => _RecommendSongDataDailySongsPrivilegeToJson(this);
+	Map<String, dynamic> toJson() => _$RecommendSongDataDailySongsPrivilegeToJson(this);
 
 	@override
 	String toString() {
@@ -305,9 +305,9 @@ class RecommendSongDataDailySongsPrivilegeFreeTrialPrivilege {
 
 	RecommendSongDataDailySongsPrivilegeFreeTrialPrivilege();
 
-	factory RecommendSongDataDailySongsPrivilegeFreeTrialPrivilege.fromJson(Map<String, dynamic> json) => _RecommendSongDataDailySongsPrivilegeFreeTrialPrivilegeFromJson(json);
+	factory RecommendSongDataDailySongsPrivilegeFreeTrialPrivilege.fromJson(Map<String, dynamic> json) => _$RecommendSongDataDailySongsPrivilegeFreeTrialPrivilegeFromJson(json);
 
-	Map<String, dynamic> toJson() => _RecommendSongDataDailySongsPrivilegeFreeTrialPrivilegeToJson(this);
+	Map<String, dynamic> toJson() => _$RecommendSongDataDailySongsPrivilegeFreeTrialPrivilegeToJson(this);
 
 	@override
 	String toString() {
@@ -324,9 +324,9 @@ class RecommendSongDataDailySongsPrivilegeChargeInfoList {
 
 	RecommendSongDataDailySongsPrivilegeChargeInfoList();
 
-	factory RecommendSongDataDailySongsPrivilegeChargeInfoList.fromJson(Map<String, dynamic> json) => _RecommendSongDataDailySongsPrivilegeChargeInfoListFromJson(json);
+	factory RecommendSongDataDailySongsPrivilegeChargeInfoList.fromJson(Map<String, dynamic> json) => _$RecommendSongDataDailySongsPrivilegeChargeInfoListFromJson(json);
 
-	Map<String, dynamic> toJson() => _RecommendSongDataDailySongsPrivilegeChargeInfoListToJson(this);
+	Map<String, dynamic> toJson() => _$RecommendSongDataDailySongsPrivilegeChargeInfoListToJson(this);
 
 	@override
 	String toString() {
@@ -343,9 +343,9 @@ class RecommendSongDataRecommendReasons {
 
 	RecommendSongDataRecommendReasons();
 
-	factory RecommendSongDataRecommendReasons.fromJson(Map<String, dynamic> json) => _RecommendSongDataRecommendReasonsFromJson(json);
+	factory RecommendSongDataRecommendReasons.fromJson(Map<String, dynamic> json) => _$RecommendSongDataRecommendReasonsFromJson(json);
 
-	Map<String, dynamic> toJson() => _RecommendSongDataRecommendReasonsToJson(this);
+	Map<String, dynamic> toJson() => _$RecommendSongDataRecommendReasonsToJson(this);
 
 	@override
 	String toString() {

@@ -10,9 +10,9 @@ class SongUrlEntity {
 
 	SongUrlEntity();
 
-	factory SongUrlEntity.fromJson(Map<String, dynamic> json) => _SongUrlEntityFromJson(json);
+	factory SongUrlEntity.fromJson(Map<String, dynamic> json) => _$SongUrlEntityFromJson(json);
 
-	Map<String, dynamic> toJson() => _SongUrlEntityToJson(this);
+	Map<String, dynamic> toJson() => _$SongUrlEntityToJson(this);
 
 	@override
 	String toString() {
@@ -50,9 +50,9 @@ class SongUrlData {
 
 	SongUrlData();
 
-	factory SongUrlData.fromJson(Map<String, dynamic> json) => _SongUrlDataFromJson(json);
+	factory SongUrlData.fromJson(Map<String, dynamic> json) => _$SongUrlDataFromJson(json);
 
-	Map<String, dynamic> toJson() => _SongUrlDataToJson(this);
+	Map<String, dynamic> toJson() => _$SongUrlDataToJson(this);
 
 	@override
 	String toString() {
@@ -67,9 +67,9 @@ class SongUrlDataFreeTrialPrivilege {
 
 	SongUrlDataFreeTrialPrivilege();
 
-	factory SongUrlDataFreeTrialPrivilege.fromJson(Map<String, dynamic> json) => _SongUrlDataFreeTrialPrivilegeFromJson(json);
+	factory SongUrlDataFreeTrialPrivilege.fromJson(Map<String, dynamic> json) => _$SongUrlDataFreeTrialPrivilegeFromJson(json);
 
-	Map<String, dynamic> toJson() => _SongUrlDataFreeTrialPrivilegeToJson(this);
+	Map<String, dynamic> toJson() => _$SongUrlDataFreeTrialPrivilegeToJson(this);
 
 	@override
 	String toString() {
@@ -86,9 +86,9 @@ class SongUrlDataFreeTimeTrialPrivilege {
 
 	SongUrlDataFreeTimeTrialPrivilege();
 
-	factory SongUrlDataFreeTimeTrialPrivilege.fromJson(Map<String, dynamic> json) => _SongUrlDataFreeTimeTrialPrivilegeFromJson(json);
+	factory SongUrlDataFreeTimeTrialPrivilege.fromJson(Map<String, dynamic> json) => _$SongUrlDataFreeTimeTrialPrivilegeFromJson(json);
 
-	Map<String, dynamic> toJson() => _SongUrlDataFreeTimeTrialPrivilegeToJson(this);
+	Map<String, dynamic> toJson() => _$SongUrlDataFreeTimeTrialPrivilegeToJson(this);
 
 	@override
 	String toString() {

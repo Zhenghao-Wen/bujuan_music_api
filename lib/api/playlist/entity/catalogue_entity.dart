@@ -12,9 +12,9 @@ class CatalogueEntity {
 
 	CatalogueEntity();
 
-	factory CatalogueEntity.fromJson(Map<String, dynamic> json) => _CatalogueEntityFromJson(json);
+	factory CatalogueEntity.fromJson(Map<String, dynamic> json) => _$CatalogueEntityFromJson(json);
 
-	Map<String, dynamic> toJson() => _CatalogueEntityToJson(this);
+	Map<String, dynamic> toJson() => _$CatalogueEntityToJson(this);
 
 	@override
 	String toString() {
@@ -36,9 +36,9 @@ class CatalogueAll {
 
 	CatalogueAll();
 
-	factory CatalogueAll.fromJson(Map<String, dynamic> json) => _CatalogueAllFromJson(json);
+	factory CatalogueAll.fromJson(Map<String, dynamic> json) => _$CatalogueAllFromJson(json);
 
-	Map<String, dynamic> toJson() => _CatalogueAllToJson(this);
+	Map<String, dynamic> toJson() => _$CatalogueAllToJson(this);
 
 	@override
 	String toString() {
@@ -60,9 +60,9 @@ class CatalogueSub {
 
 	CatalogueSub();
 
-	factory CatalogueSub.fromJson(Map<String, dynamic> json) => _CatalogueSubFromJson(json);
+	factory CatalogueSub.fromJson(Map<String, dynamic> json) => _$CatalogueSubFromJson(json);
 
-	Map<String, dynamic> toJson() => _CatalogueSubToJson(this);
+	Map<String, dynamic> toJson() => _$CatalogueSubToJson(this);
 
 	@override
 	String toString() {

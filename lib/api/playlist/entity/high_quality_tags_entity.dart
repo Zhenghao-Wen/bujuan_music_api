@@ -10,9 +10,9 @@ class HighQualityTagsEntity {
 
 	HighQualityTagsEntity();
 
-	factory HighQualityTagsEntity.fromJson(Map<String, dynamic> json) => _HighQualityTagsEntityFromJson(json);
+	factory HighQualityTagsEntity.fromJson(Map<String, dynamic> json) => _$HighQualityTagsEntityFromJson(json);
 
-	Map<String, dynamic> toJson() => _HighQualityTagsEntityToJson(this);
+	Map<String, dynamic> toJson() => _$HighQualityTagsEntityToJson(this);
 
 	@override
 	String toString() {
@@ -30,9 +30,9 @@ class HighQualityTagsTags {
 
 	HighQualityTagsTags();
 
-	factory HighQualityTagsTags.fromJson(Map<String, dynamic> json) => _HighQualityTagsTagsFromJson(json);
+	factory HighQualityTagsTags.fromJson(Map<String, dynamic> json) => _$HighQualityTagsTagsFromJson(json);
 
-	Map<String, dynamic> toJson() => _HighQualityTagsTagsToJson(this);
+	Map<String, dynamic> toJson() => _$HighQualityTagsTagsToJson(this);
 
 	@override
 	String toString() {

@@ -18,8 +18,8 @@ class LoginEntity {
 
   LoginEntity();
 
-  factory LoginEntity.fromJson(Map<String, dynamic> json) => _LoginEntityFromJson(json);
-  Map<String, dynamic> toJson() => _LoginEntityToJson(this);
+  factory LoginEntity.fromJson(Map<String, dynamic> json) => _$LoginEntityFromJson(json);
+  Map<String, dynamic> toJson() => _$LoginEntityToJson(this);
   @override String toString() => jsonEncode(this);
 }
 
@@ -42,8 +42,8 @@ class LoginAccount {
   bool? uninitialized;
 
   LoginAccount();
-  factory LoginAccount.fromJson(Map<String, dynamic> json) => _LoginAccountFromJson(json);
-  Map<String, dynamic> toJson() => _LoginAccountToJson(this);
+  factory LoginAccount.fromJson(Map<String, dynamic> json) => _$LoginAccountFromJson(json);
+  Map<String, dynamic> toJson() => _$LoginAccountToJson(this);
   @override String toString() => jsonEncode(this);
 }
 
@@ -86,16 +86,16 @@ class LoginProfile {
   int? playlistBeSubscribedCount;
 
   LoginProfile();
-  factory LoginProfile.fromJson(Map<String, dynamic> json) => _LoginProfileFromJson(json);
-  Map<String, dynamic> toJson() => _LoginProfileToJson(this);
+  factory LoginProfile.fromJson(Map<String, dynamic> json) => _$LoginProfileFromJson(json);
+  Map<String, dynamic> toJson() => _$LoginProfileToJson(this);
   @override String toString() => jsonEncode(this);
 }
 
 @JsonSerializable()
 class LoginProfileExperts {
   LoginProfileExperts();
-  factory LoginProfileExperts.fromJson(Map<String, dynamic> json) => _LoginProfileExpertsFromJson(json);
-  Map<String, dynamic> toJson() => _LoginProfileExpertsToJson(this);
+  factory LoginProfileExperts.fromJson(Map<String, dynamic> json) => _$LoginProfileExpertsFromJson(json);
+  Map<String, dynamic> toJson() => _$LoginProfileExpertsToJson(this);
   @override String toString() => jsonEncode(this);
 }
 
@@ -112,7 +112,7 @@ class LoginBindings {
   int? type;
 
   LoginBindings();
-  factory LoginBindings.fromJson(Map<String, dynamic> json) => _LoginBindingsFromJson(json);
-  Map<String, dynamic> toJson() => _LoginBindingsToJson(this);
+  factory LoginBindings.fromJson(Map<String, dynamic> json) => _$LoginBindingsFromJson(json);
+  Map<String, dynamic> toJson() => _$LoginBindingsToJson(this);
   @override String toString() => jsonEncode(this);
 }
