@@ -22,7 +22,6 @@ class BujuanMusicManager with UserApi, RecommendApi, TopApi, AlbumApi, PlaylistA
   late Dio _dio;
   static late CookieJar cookieJar;
   bool _debug = false;
-  String? _manualCookie; // 新增：手动设置的 cookie
 
   BujuanMusicManager._internal();
 
@@ -43,15 +42,6 @@ class BujuanMusicManager with UserApi, RecommendApi, TopApi, AlbumApi, PlaylistA
     _dio = Dio(options);
     _dio.interceptors.add(CookieManager(cookieJar));
     _dio.interceptors.add(MusicApiInterceptors());
-    // 新增：处理手动 cookie 的拦截器
-    _dio.interceptors.add(InterceptorsWrapper(
-      onRequest: (options, handler) {
-        if (_manualCookie != null && _manualCookie!.isNotEmpty) {
-          options.headers['Cookie'] = _manualCookie;
-        }
-        return handler.next(options);
-      },
-    ));
     if (_debug) {
       _dio.interceptors.add(PrettyDioLogger(
           requestHeader: true,
@@ -65,14 +55,35 @@ class BujuanMusicManager with UserApi, RecommendApi, TopApi, AlbumApi, PlaylistA
     }
   }
 
-  /// 设置手动 cookie，之后所有请求将优先携带此 cookie
-  void setCookie(String cookie) {
-    _manualCookie = cookie;
+  /// 将手动获得的 cookie 字符串添加到 cookieJar 中（持久化）
+  void addCookie(String cookieStr) {
+    try {
+      // 分割可能由多个 cookie 组成的字符串
+      final parts = cookieStr.split('; ');
+      for (var part in parts) {
+        final eq = part.indexOf('=');
+        if (eq > 0) {
+          final name = part.substring(0, eq);
+          final value = part.substring(eq + 1);
+          Cookie cookie = Cookie(name, value);
+          cookie.domain = 'music.163.com'; // 根据你的 API 域名设置
+          cookie.path = '/';
+          cookieJar.saveFromResponse(Uri.parse(defaultUrl), [cookie]);
+        }
+      }
+    } catch (e) {
+      debugPrint('Error adding cookie: $e');
+    }
   }
 
-  /// 清除手动 cookie
-  void clearCookie() {
-    _manualCookie = null;
+  /// 兼容旧方法：设置手动 cookie（内部调用 addCookie）
+  void setCookie(String cookie) {
+    addCookie(cookie);
+  }
+
+  /// 清除该域名下的所有 cookie
+  void clearCookies() {
+    cookieJar.deleteAll(Uri.parse(defaultUrl));
   }
 
   Future<T?> post<T>({required String url, Options? options, Object? data}) async {
