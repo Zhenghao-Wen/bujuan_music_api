@@ -56,18 +56,24 @@ class BujuanMusicManager with UserApi, RecommendApi, TopApi, AlbumApi, PlaylistA
   }
 
   /// 将手动获得的 cookie 字符串添加到 cookieJar 中（持久化）
-  void addCookie(String cookieStr) {
+  Future<void> addCookie(String cookieStr) async {
     try {
-      final parts = cookieStr.split('; ');
+      // 按分号分割，然后逐项处理
+      final parts = cookieStr.split(';');
       for (var part in parts) {
+        part = part.trim();
+        if (part.isEmpty) continue;
         final eq = part.indexOf('=');
         if (eq > 0) {
-          final name = part.substring(0, eq);
-          final value = part.substring(eq + 1);
+          final name = part.substring(0, eq).trim();
+          final value = part.substring(eq + 1).trim();
           Cookie cookie = Cookie(name, value);
           cookie.domain = 'music.163.com';
           cookie.path = '/';
-          cookieJar.saveFromResponse(Uri.parse(defaultUrl), [cookie]);
+          debugPrint('Saving cookie: $name = $value');
+          await cookieJar.saveFromResponse(Uri.parse(defaultUrl), [cookie]);
+        } else {
+          debugPrint('Skipping malformed cookie part: "$part"');
         }
       }
     } catch (e) {
@@ -75,14 +81,15 @@ class BujuanMusicManager with UserApi, RecommendApi, TopApi, AlbumApi, PlaylistA
     }
   }
 
-  /// 兼容旧方法：设置手动 cookie（内部调用 addCookie）
+  /// 兼容旧方法：设置手动 cookie（已弃用，请使用 addCookie）
+  @Deprecated('Use addCookie instead')
   void setCookie(String cookie) {
-    addCookie(cookie);
+    addCookie(cookie); // 不等待，但会发出警告
   }
 
   /// 清除该域名下的所有 cookie
-  void clearCookies() {
-    cookieJar.delete(Uri.parse(defaultUrl));
+  Future<void> clearCookies() async {
+    await cookieJar.delete(Uri.parse(defaultUrl));
   }
 
   Future<T?> post<T>({required String url, Options? options, Object? data}) async {
