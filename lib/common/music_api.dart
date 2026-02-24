@@ -58,7 +58,6 @@ class BujuanMusicManager with UserApi, RecommendApi, TopApi, AlbumApi, PlaylistA
   /// 将手动获得的 cookie 字符串添加到 cookieJar 中（持久化）
   void addCookie(String cookieStr) {
     try {
-      // 分割可能由多个 cookie 组成的字符串
       final parts = cookieStr.split('; ');
       for (var part in parts) {
         final eq = part.indexOf('=');
@@ -66,7 +65,7 @@ class BujuanMusicManager with UserApi, RecommendApi, TopApi, AlbumApi, PlaylistA
           final name = part.substring(0, eq);
           final value = part.substring(eq + 1);
           Cookie cookie = Cookie(name, value);
-          cookie.domain = 'music.163.com'; // 根据你的 API 域名设置
+          cookie.domain = 'music.163.com';
           cookie.path = '/';
           cookieJar.saveFromResponse(Uri.parse(defaultUrl), [cookie]);
         }
@@ -83,7 +82,7 @@ class BujuanMusicManager with UserApi, RecommendApi, TopApi, AlbumApi, PlaylistA
 
   /// 清除该域名下的所有 cookie
   void clearCookies() {
-    cookieJar.deleteAll(Uri.parse(defaultUrl));
+    cookieJar.delete(Uri.parse(defaultUrl));
   }
 
   Future<T?> post<T>({required String url, Options? options, Object? data}) async {
