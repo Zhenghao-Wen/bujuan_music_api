@@ -22,6 +22,7 @@ class BujuanMusicManager with UserApi, RecommendApi, TopApi, AlbumApi, PlaylistA
   late Dio _dio;
   static late CookieJar cookieJar;
   bool _debug = false;
+  String? _manualCookie; // 恢复内存变量
 
   BujuanMusicManager._internal();
 
@@ -42,6 +43,15 @@ class BujuanMusicManager with UserApi, RecommendApi, TopApi, AlbumApi, PlaylistA
     _dio = Dio(options);
     _dio.interceptors.add(CookieManager(cookieJar));
     _dio.interceptors.add(MusicApiInterceptors());
+    // 恢复处理手动 cookie 的拦截器
+    _dio.interceptors.add(InterceptorsWrapper(
+      onRequest: (options, handler) {
+        if (_manualCookie != null && _manualCookie!.isNotEmpty) {
+          options.headers['Cookie'] = _manualCookie;
+        }
+        return handler.next(options);
+      },
+    ));
     if (_debug) {
       _dio.interceptors.add(PrettyDioLogger(
           requestHeader: true,
@@ -55,41 +65,14 @@ class BujuanMusicManager with UserApi, RecommendApi, TopApi, AlbumApi, PlaylistA
     }
   }
 
-  /// 将手动获得的 cookie 字符串添加到 cookieJar 中（持久化）
-  Future<void> addCookie(String cookieStr) async {
-    try {
-      // 按分号分割，然后逐项处理
-      final parts = cookieStr.split(';');
-      for (var part in parts) {
-        part = part.trim();
-        if (part.isEmpty) continue;
-        final eq = part.indexOf('=');
-        if (eq > 0) {
-          final name = part.substring(0, eq).trim();
-          final value = part.substring(eq + 1).trim();
-          Cookie cookie = Cookie(name, value);
-          cookie.domain = 'music.163.com';
-          cookie.path = '/';
-          debugPrint('Saving cookie: $name = $value');
-          await cookieJar.saveFromResponse(Uri.parse(defaultUrl), [cookie]);
-        } else {
-          debugPrint('Skipping malformed cookie part: "$part"');
-        }
-      }
-    } catch (e) {
-      debugPrint('Error adding cookie: $e');
-    }
-  }
-
-  /// 兼容旧方法：设置手动 cookie（已弃用，请使用 addCookie）
-  @Deprecated('Use addCookie instead')
+  /// 设置手动 cookie（内存，同步）
   void setCookie(String cookie) {
-    addCookie(cookie); // 不等待，但会发出警告
+    _manualCookie = cookie;
   }
 
-  /// 清除该域名下的所有 cookie
-  Future<void> clearCookies() async {
-    await cookieJar.delete(Uri.parse(defaultUrl));
+  /// 清除手动 cookie
+  void clearCookie() {
+    _manualCookie = null;
   }
 
   Future<T?> post<T>({required String url, Options? options, Object? data}) async {
